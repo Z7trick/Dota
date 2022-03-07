@@ -1,0 +1,122 @@
+//Основная сетка
+body {
+	font-family: $fontfamily;
+}
+
+.container,
+.nav__container {
+	max-width: $mw + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $md1) {
+		max-width: 970px;
+		.intro__suptitle {
+			font-size: 87px;
+		}
+		.intro__title {
+			font-size: 99px;
+		}
+	}
+	@media (max-width: $md2) {
+		max-width: 750px;
+		.intro__suptitle {
+			font-size: 68px;
+			top: 59px;
+		}
+		.intro__title {
+			font-size: 99px;
+		}
+	}
+	@media (max-width: $md3) {
+		max-width: none;
+		padding: 0 10px;
+		.intro__suptitle {
+			font-size: 55px;
+		}
+		.intro__title {
+			font-size: 76px;
+		}
+	}
+
+	@media (max-width: $md4) {
+		.header__logo {
+			font-size: 25px;
+			margin-right: 19px;
+			padding-bottom: 3px;
+		}
+		.intro__suptitle {
+			font-size: 45px;
+		}
+		.intro__title {
+			font-size: 66px;
+		}
+	}
+
+	@media (max-width: 350px) {
+		.header__logo {
+			font-size: 18px;
+			margin-right: 19px;
+			padding-bottom: 3px;
+		}
+		.intro__suptitle {
+			font-size: 56px;
+			top: 59px;
+		}
+		.intro__title {
+			font-size: 55px;
+		}
+	}
+	@media (max-height: 500px) {
+		.header__logo {
+			font-size: 33px;
+			margin-right: 19px;
+			padding-bottom: 3px;
+		}
+		.intro__suptitle {
+			font-size: 66px;
+			margin-bottom: 38px;
+		}
+		.intro__title {
+			font-size: 44px;
+		}
+	}
+	@media (max-height: 400px) {
+		.header__logo {
+			font-size: 33px;
+			margin-right: 19px;
+			padding-bottom: 3px;
+		}
+		.intro__suptitle {
+			font-size: 45px;
+			margin-bottom: 28px;
+		}
+		.intro__title {
+			font-size: 34px;
+		}
+	}
+	@media (max-height: 300px) {
+		.header__logo {
+			font-size: 33px;
+			margin-right: 19px;
+			padding-bottom: 3px;
+		}
+		.intro__suptitle {
+			font-size: 45px;
+			margin-bottom: 28px;
+		}
+		.intro__title::after {
+			margin: 15px 522px;
+		}
+	}
+}
+
+//Оболочка
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	@include flexbox();
+	flex-direction: column;
+	// &.loaded {
+	// }
+}

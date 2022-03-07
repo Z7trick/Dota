@@ -1,0 +1,12 @@
+.btn {
+	display: inline-block;
+	padding: 0px 0px;
+	&:hover {
+		background-color: #fce38a;
+		color: rgb(78, 0, 26);
+		transition: background 0.1s linear, color 0.1s linear;
+	}
+	&.fw {
+		width: 100%;
+	}
+}
